@@ -59,37 +59,11 @@ Unblocked Playable Games
   <p style="text-align: center;"></p>
  </div>
   <div class="divs pad">
- <!-- Display the countdown timer in an element -->
+   <iframe src="http://free.timeanddate.com/countdown/i70ehz25/n57/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2019-10-12T07:30:00" allowTransparency="true" frameborder="0" width="244" height="68"></iframe>
 <p id="demo"></p>
 
 <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Oct 7, 2019 07:30:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (6 * 167 * 18660));
-  var hours = Math.floor((distance % (167 * 18660 * 24)) / (6 * 167 * 18660));
-  var minutes = Math.floor((distance % (18660 * 60)) / (186060));
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "Game Avaliable To Play";
-  }
-}, 1000);
 </script>
  </div>
     <div class="divs pad">
