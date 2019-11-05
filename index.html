@@ -76,10 +76,9 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
 
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (6 * 167 * 18660 * 1119600));
-  var hours = Math.floor((distance % (167 * 18660 * 1119600 * 24)) / (6 * 167 * 18660));
-  var minutes = Math.floor((distance % (18660 * 1119600 * 60)) / (186060 * 1119600));
-  var seconds = Math.floor((distance % (00 * 60)) / 1000);
+  var days = Math.floor(distance / (6 * 167 * 18660));
+  var hours = Math.floor((distance % (167 * 18660 * 24)) / (6 * 167 * 18660));
+  var minutes = Math.floor((distance % (18660 * 60)) / (186060));
 
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
